@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            background: linear-gradient(to right, #420524 0%, #ff0080 100%);
+            width: 100%;
+            padding: 15px 15px;
+            border-radius: 3px;
+            text-align: right;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu-title {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .hel {
+            margin: 20px;
+            margin-top: 80px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hel table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .hel h3.comp {
+            color: #eee6ea;
+            margin-bottom: 10px;
+        }
+
+        .hel ol {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .hel ol li {
+            margin-bottom: 10px;
+        }
+
+        .hel p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .hel h4.comp {
+            color: #f0ecee;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .comp {
+            color: #ff0080;
+        }
+
+        .comp-link {
+            color: #ff0080;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .comp-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menu-title">Smart Secure</div>
+        <a href="home.html" class="button">Home</a>
+        <a href="product.html" class="button">Device Details</a>
+        <a href="contus.html" class="button">Contact Us</a>
+        <a href="log.html" class="button">Login</a>
+        <a href="Signup.html" class="button">Sign Up</a>
+    </div>
+
+    <br>
+    <div class="hel">
+        <table>
+            <tr>
+                <td>
+                    <h3 class="comp">Smart Mining Helmet SMHV1</h3>
+                    <ol>
+                        <li><a class="comp-link" href="#esp32">ESP 32</a></li>
+                        <li><a class="comp-link" href="#raspberry-pi">Raspberry Pi 4</a></li>
+                        <li><a class="comp-link" href="#mq9">MQ 9</a></li>
+                        <li><a class="comp-link" href="#nrf24l01">NRF24L01 Wireless Transceiver Antenna</a></li>
+                        <li><a class="comp-link" href="#use-cases">Use Cases</a></li>
+                    </ol>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div id="esp32">
+            <h4 class="comp">ESP 32</h4>
+            <p>ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and
+                dual-mode Bluetooth. The ESP32 series employs either a Tensilica Xtensa LX6 microprocessor in both
+                dual-core and single-core variations, Xtensa LX7 dual-core microprocessor or a single-core RISC-V
+                microprocessor and includes built-in antenna switches, RF balun, power amplifier, low-noise receive
+                amplifier, filters, and power-management modules. ESP32 is created and developed by Espressif Systems,
+                a Chinese company based in Shanghai, and is manufactured by TSMC using their 40 nm process. It is a
+                successor to the ESP8266 microcontroller.</p>
+            <ol>
+                <li>Xtensa single-/dual-core 32-bit LX6 microprocessor(s)</li>
+                <li>Supports single-precision Floating Point Unit (FPU)</li>
+                <li>Wi-Fi: 802.11 b/g/n</li>
+                <li>Bluetooth: v4.2 BR/EDR and BLE (shares the radio with Wi-Fi)</li>
+                <li>34 × programmable GPIOs</li>
+                <li>12-bit SAR ADC up to 18 channels</li>
+                <li>2 x 8-bit DAC</li>
+            </ol>
+        </div>
+
+        <div id="raspberry-pi">
+            <h4 class="comp">Raspberry Pi 4</h4>
+            <p>Raspberry Pi 4 is integrated with a 64 bit quad core cortex- A72 ARM v8, broadcom BCM2711 and runs at a
+                speed of 1.5GHz. Form Factor: Nano-ITX The new Raspberry Pi product is equipped with bluetooth 5.0,
+                BLE, gigabit ethernet and has 802.11ac wireless at 2.4GHz and 5GHz It provides faster data transfer
+                with two USB 3.0 ports, two USB 2.0 ports, micro SD slot for data storage and loading operating systems
+                The Raspberry Pi 4 has 2 micro HDMI ports (supports 4k@60p), 2 lane MIPI DSI display port, 2 lane MIPI
+                CSI camera port and 4-pole stereo audio and composite video port.</p>
+            <ol>
+                <li>Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.8GHz</li>
+                <li>1GB, 2GB, 4GB or 8GB LPDDR4-3200 SDRAM (depending on model)</li>
+                <li>Raspberry Pi standard 40 pin GPIO header (fully backwards compatible with previous boards)</li>
+                <li>2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE Gigabit Ethernet</li>
+                <li>Micro-SD card slot for loading operating system and data storage</li>
+                <h5>* A good quality 2.5A power supply can be used if downstream USB peripherals consume less than 500mA
+                    in total.</h5>
+            </ol>
+        </div>
+
+        <div id="mq9">
+            <h4 class="comp">MQ 9</h4>
+            <p>The MQ-9 Analog Gas Sensor has a high sensitivity to Carbon Monoxide, Methane, and LPG. The sensor that
+                can be used to detect different gases containing the MQ-9 gas sensor is SnO2, which has lower
+                conductivity in clean air. It makes detection by cycling high and low temperature and detects CO when
+                low temperature (heated by 1.5V). The sensor’s conductivity is higher along with the gas concentration
+                rising. When temperature rises (heated by 5.0V), it detects Methane, Propane, combustible gas, etc and
+                cleans the other gases as it adsorbed under low temperature. MQ-9 usually applied in domestic gas
+                leakage detector, industrial gas detector, portable gas detector, etc.</p>
+            <ol>
+                <li>Power supply: 5V</li>
+                <li>High sensitivity to Methane, Propane, and CO</li>
+                <li>Long life and low cost</li>
+                <li>Standard Encapsulation: Bakelite</li>
+                <li>Heater Resistance: 31Ω±3Ω(Room Tem.)</li>
+                <li>Detection Gas: CO and combustible gas</li>
+            </ol>
+        </div>
+
+        <div id="nrf24l01">
+            <h4 class="comp">NRF24L01 Wireless Transceiver Antenna</h4>
+            <p>The NRF24L01 module is the latest in RF modules. This module uses the 2.4GHz transceiver from Nordic
+                Semiconductor, the NRF24L01+. This transceiver IC operates in the 2.4GHz band and has many new
+                features! Take all the coolness of the 2.4GHz NRF24L01+PA+LNA SMA Wireless Transceiver Antenna and add
+                some extra pipelines, buffers, and an auto-retransmit feature – very nice!<br> This board features a
+                reverse polarized SMA connector for maximum RF range. And there is PA and LNA circuit on board, with
+                the external antenna it can reach long distance than the one without these parts. This module comes
+                with the 2.4G antenna (2DB), with a 250Kbps transmission rate on open-air it can reach the 800-1K
+                meters communication distance.<br> This wireless Transceiver module is an easy and suitable module if
+                you want to set up your wireless communication system at a low cost!! It can achieve a good balance
+                between wireless transition performance and cost!</p>
+            <ol>
+                <li>It uses 2.4GHz global open ISM band, with license-free.</li>
+                <li>Transmit power is greater than +20 dBm.</li>
+                <li>2Mbit/s speed makes high-quality VoIP possible</li>
+                <li>Multi-frequency points: 125 frequency points meet the needs of multi-point communications and
+                    frequency hopping.</li>
+            </ol>
+        </div>
+
+        <div id="use-cases">
+            <h4 class="comp">Use Cases</h4>
+            <ol>
+                <li><b>Safety Monitoring and Alerts:</b> Smart helmets are equipped with various sensors that can
+                    monitor environmental conditions such as air quality, temperature, humidity, and presence of toxic
+                    gases. They can detect hazardous conditions in real-time and alert miners to potential dangers,
+                    allowing them to take preventive measures and evacuate if necessary.</li>
+                <li><b>Health Monitoring:</b> Smart helmets can monitor vital signs of miners such as heart rate, body
+                    temperature, and fatigue levels. This data can help identify signs of exhaustion or health issues
+                    early on, allowing for timely intervention and preventing accidents or health emergencies.</li>
+                <li><b>Location Tracking:</b> Using GPS and RFID technology, smart helmets can track the location of
+                    miners within the mine, enabling supervisors to monitor their movements and ensure they are in
+                    safe areas. In the event of an emergency, location tracking can facilitate rescue operations and
+                    evacuation procedures.</li>
+                <li><b>Communication and Collaboration:</b> Smart helmets are equipped with built-in communication
+                    systems such as two-way radios, voice commands, and hands-free calling features. This enables
+                    seamless communication among miners, supervisors, and other personnel, facilitating collaboration
+                    and coordination during mining operations.</li>
+                <li><b>Data Collection and Analysis:</b> Smart helmets can collect data on various aspects of mining
+                    operations, including production rates, equipment status, and environmental conditions. This data
+                    can be analyzed to identify trends, optimize workflows, and make informed decisions to improve
+                    efficiency and productivity.</li>
+                <li><b>Remote Assistance and Training:</b> Smart helmets can provide remote assistance and training to
+                    miners by offering access to instructional videos, manuals, and troubleshooting guides. This
+                    enables miners to acquire new skills, receive guidance on equipment operation, and troubleshoot
+                    issues without the need for on-site supervision.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

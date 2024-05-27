@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #3498db;
+            outline: none;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .input-box .underline {
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: #3498db;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s;
+        }
+
+        .input-box input:focus+.underline {
+            width: 0;
+        }
+
+        .button input {
+            width: 100%;
+            padding: 10px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button input:hover {
+            background: #2980b9;
+        }
+
+        .option {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .twitter,
+        .facebook {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .twitter a,
+        .facebook a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .twitter a:hover,
+        .facebook a:hover {
+            background: #2980b9;
+        }
+
+        .fab {
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .twitter a:hover .fab,
+        .facebook a:hover .fab {
+            transform: scale(1.2);
+        }
+    </style>
+
+    <script src="client_login.js">
+    </script>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menu-title">Smart Secure</div>
+        <a href="home.html" class="button">Home</a>
+        <a href="product.html" class="button">Device Details</a>
+        <a href="contus.html" class="button">Contact Us</a>
+        <a href="log.html" class="button">Login</a>
+        <a href="Signup.html" class="button">Sign Up</a>
+    </div>
+
+    <div class="container">
+        <form id="login-form" action="/login" method="post">
+            <div class="title">Login</div>
+            <div class="input-box">
+                <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" id="passwd" name="passwd" placeholder="Enter Your Password" required>
+                <div class="underline"></div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Continue" id="submitButton">
+            </div>
+            <center><a href="forgot.html">Forgot PassWord</a></center>
+            <center><a href="Signup.html">Sign Up</a></center>
+            <div class="option">or Connect With Social Media</div>
+            <div class="twitter">
+                <a href="https://accounts.google.com/v3/signin/identifier?flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=en-gb&ifkv=ASKXGp30cJCCwkAlZXZ8-rd5tbgsLDBwG5_3AO8E2XYYQTjFVyqRAKCKa51l2YASbA7m9MptuVse4Q&theme=glif&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1"
+                    class="btn btn-google btn-user btn-block"><i class="fab fa-google fa-fw"></i>Sign in With Google</a>
+            </div>
+            <div class="facebook">
+                <a href="https://www.facebook.com/login.php/"><i class="fab fa-facebook-f"></i>Sign in With Facebook</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

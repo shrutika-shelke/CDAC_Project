@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="client_detail.js"></script>
+    </head>
+  <body>
+    <div class="menu">
+      <div class="menu-title">Smart Secure</div>
+
+      <a href="contus.html" class="button">Contact Us</a>
+      <a href="home.html" class="button">Logout</a>
+      <a href="Signup.html" class="button">Sign Up</a>
+      
+    </div>
+    <h2 class="ti" >Search Data</h2>
+    
+       <div class="hel">
+        
+        <h2>Employee Details</h2>
+        <form action="#" method="get">
+            <label for="empID">Employee ID:</label>
+            <input type="text" id="empID" name="empID" required><br><br>
+    
+            <!-- Button linked to ThingSpeak for each Employee ID -->
+            <input type="submit" value="View Data" onclick="viewData(event)">
+            <button id="button1" onclick="empData(event)">Employee 1 Data</button>
+            <button id="button2">Employee 2 Data</button>
+            <!-- Add more buttons for other employees as needed -->
+
+    
+            <p id="message"></p>
+            <div class="hel">
+              <h1>Data </h1>
+              <table id="data-table" border="1">
+                <tr>
+                  <th>Gas Level</th>
+                  <th>Temperature</th>
+                  <th>Humidity</th>
+                  <th>Pulse Rate</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
